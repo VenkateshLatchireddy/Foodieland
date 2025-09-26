@@ -74,10 +74,9 @@ function App() {
     <div className="container">
       <Navbar/> 
       <BannerCarousel />
-    
-      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <TastyCard />
-   
+      <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
+    
       <Filters
         filters={filters}
         setFilters={setFilters}
@@ -85,7 +84,6 @@ function App() {
         setSortOption={setSortOption} 
         handleClearAll={handleClearAll}
       />
-      <TastyCard />
       <RecipeList recipes={filteredRecipes} />
       <CheffBannerCard />
     </div>
