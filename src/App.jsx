@@ -76,7 +76,7 @@ function App() {
       <BannerCarousel />
     
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      
+      <TastyCard />
    
       <Filters
         filters={filters}
