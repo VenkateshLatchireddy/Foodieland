@@ -1,0 +1,112 @@
+.cbc-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px; /* reduced padding */
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  border-radius: 20px; /* slightly smaller radius */
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  gap: 30px; /* reduced gap */
+  margin: 30px auto; /* reduced margin */
+  max-width: 1100px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Left Section */
+.cbc-left {
+  flex: 1;
+}
+
+.cbc-heading {
+  font-size: 28px; /* smaller heading */
+  font-weight: 700;
+  margin-bottom: 15px; /* less space */
+  line-height: 1.3;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+.cbc-paragraph {
+  font-size: 16px; /* smaller paragraph */
+  margin-bottom: 20px; /* less space */
+  line-height: 1.5;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.cbc-button {
+  background: #ff6a00;
+  color: #fff;
+  padding: 10px 20px; /* smaller button */
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cbc-button:hover {
+  background: #ee0979;
+  transform: scale(1.05);
+}
+
+/* Right Section */
+.cbc-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cbc-chef-image {
+  max-width: 90%; /* smaller image */
+  height: 200px;
+  
+  border-radius: 15px; /* slightly smaller radius */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .cbc-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 20px 15px; /* smaller padding for tablets */
+    gap: 20px;
+  }
+
+  .cbc-heading {
+    font-size: 24px;
+  }
+
+  .cbc-paragraph {
+    font-size: 15px;
+  }
+
+  .cbc-button {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
+
+  .cbc-chef-image {
+    max-width: 80%; /* smaller image on tablet */
+  }
+}
+
+@media (max-width: 600px) {
+  .cbc-heading {
+    font-size: 20px;
+  }
+
+  .cbc-paragraph {
+    font-size: 14px;
+  }
+
+  .cbc-button {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .cbc-chef-image {
+    max-width: 100%; /* full width on mobile */
+  }
+}

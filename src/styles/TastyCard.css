@@ -1,0 +1,92 @@
+.fqc-carousel-container {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  height: 180px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Each card */
+.fqc-carousel-card {
+  position: absolute;
+  width: 100%;
+  padding: 25px 30px;
+  border-radius: 20px;
+  text-align: center;
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.8s ease-in-out;
+}
+
+/* Active card */
+.fqc-carousel-card.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 2;
+}
+
+/* Inactive card behind */
+.fqc-carousel-card.inactive {
+  opacity: 0;
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+/* Headings */
+.fqc-carousel-heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* Paragraph */
+.fqc-carousel-paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Gradient backgrounds with matching text colors */
+.fqc-carousel-card:nth-child(1) {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  color: #6b1e3b; /* dark pink for contrast */
+}
+
+.fqc-carousel-card:nth-child(2) {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  color: #003366; /* deep blue for contrast */
+}
+
+.fqc-carousel-card:nth-child(3) {
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #7a2e0b; /* dark orange/brown for contrast */
+}
+
+.fqc-carousel-card:nth-child(4) {
+  background: linear-gradient(135deg, #f6d365, #fda085);
+  color: #662e00; /* rich brown for contrast */
+}
+
+/* Optional: subtle text shadow for readability */
+.fqc-carousel-heading,
+.fqc-carousel-paragraph {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .fqc-carousel-container {
+    height: 220px;
+  }
+  .fqc-carousel-heading {
+    font-size: 18px;
+  }
+  .fqc-carousel-paragraph {
+    font-size: 14px;
+  }
+}

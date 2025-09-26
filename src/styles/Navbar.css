@@ -1,0 +1,140 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #00c6ff); /* gradient */
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, #ff6a00, #ee0979, #00c6ff) 1;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fffa;
+  transform: scale(1.05);
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: yellow;
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 15px 40px;
+  }
+
+  .nav-links {
+    gap: 25px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+    padding: 5px 8px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 30px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
+}

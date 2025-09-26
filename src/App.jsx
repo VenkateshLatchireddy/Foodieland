@@ -3,7 +3,11 @@ import SearchBar from "./components/SearchBar";
 import Filters from "./components/Filters";
 import RecipeList from "./components/RecipeList";
 import recipesData from "./data/recipes";
+import Navbar from "./components/Navbar";
+import BannerCarousel from "./components/BannerCarousel";
 import "./App.css";
+import TastyCard from "./components/TastyCard";
+import CheffBannerCard from "./components/CheffBannerCard";
 
 function App() {
   const [recipes, setRecipes] = useState(recipesData); 
@@ -68,6 +72,9 @@ function App() {
 
   return (
     <div className="container">
+      <Navbar/> 
+      <BannerCarousel />
+    
       <SearchBar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       
    
@@ -78,8 +85,9 @@ function App() {
         setSortOption={setSortOption} 
         handleClearAll={handleClearAll}
       />
-      
+      <TastyCard />
       <RecipeList recipes={filteredRecipes} />
+      <CheffBannerCard />
     </div>
   );
 }

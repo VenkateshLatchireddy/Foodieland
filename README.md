@@ -22,11 +22,16 @@ A recipe card application built with React that displays various recipes with be
 To get started with this project locally, follow these steps:
 
 ## Assignment Screenshots: images are downloaded from meta AI, images credits to whatsapp META AI
+![Recipe Page](https://raw.githubusercontent.com/VenkateshLatchireddy/Recipe-Contest/main/recipe-contest/src/assets/s6.png)
+
 ![Recipe Page](https://raw.githubusercontent.com/VenkateshLatchireddy/Recipe-Contest/main/recipe-contest/src/assets/s1.png)
 
 
 
 ![Recipe Page](https://raw.githubusercontent.com/VenkateshLatchireddy/Recipe-Contest/main/recipe-contest/src/assets/s2.png)
+![Recipe Page](https://raw.githubusercontent.com/VenkateshLatchireddy/Recipe-Contest/main/recipe-contest/src/assets/s7.png)
+![Recipe Page](https://raw.githubusercontent.com/VenkateshLatchireddy/Recipe-Contest/main/recipe-contest/src/assets/s8.png)
+
 
 ![Recipe Page](https://raw.githubusercontent.com/VenkateshLatchireddy/Recipe-Contest/main/recipe-contest/src/assets/s3.png)
 
